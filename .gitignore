@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+secrets/
+runtime/
+*.db
+__pycache__/
+showcase-preview.png
+showcase-*-preview.png
