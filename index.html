@@ -15,6 +15,8 @@
     <nav aria-label="Main navigation">
       <a href="#characters">Characters</a>
       <a href="#systems">Systems</a>
+      <a href="#deep-dives">Deep dives</a>
+      <a href="#captures">Live UI</a>
       <a href="#flow">Architecture</a>
       <a class="nav-cta" href="https://github.com/maxVector-Berlin/HAL-Showcase">GitHub</a>
     </nav>
@@ -22,7 +24,7 @@
 
   <main id="top">
     <section class="hero">
-      <img class="hero-image" src="assets/hero.webp" alt="HAL, Milo and Catbot in a futuristic local AI control room">
+      <img class="hero-image" src="assets/hero.webp" width="1800" height="1013" alt="HAL, Milo and Catbot in a futuristic local AI control room">
       <div class="hero-shade"></div>
       <div class="hero-copy">
         <p class="eyebrow">LOCAL-FIRST · VOICE-DRIVEN · BUILT TOGETHER</p>
@@ -53,15 +55,15 @@
       </div>
       <div class="character-grid">
         <article class="character-card reveal" data-accent="cyan">
-          <img src="assets/hal.webp" alt="HAL white android avatar">
+          <img src="assets/hal.webp" width="900" height="900" alt="HAL white android avatar">
           <div><span class="role">THE AI PARTNER</span><h3>HAL</h3><p>Calm, direct and natural. Expressive speech with timed visemes, thinking states, smiles and subtle idle motion.</p></div>
         </article>
         <article class="character-card reveal" data-accent="violet">
-          <img src="assets/milo.webp" alt="Milo black cat avatar">
+          <img src="assets/milo.webp" width="900" height="900" alt="Milo black cat avatar">
           <div><span class="role">THE CHAOS OFFICER</span><h3>Milo</h3><p>Bright, playful and slightly cheeky. A living avatar pack inspired by the real Milo — black coat, white chest, maximum attitude.</p></div>
         </article>
         <article class="character-card reveal" data-accent="blue">
-          <img src="assets/catbot.webp" alt="Catbot cybernetic cat avatar">
+          <img src="assets/catbot.webp" width="900" height="900" alt="Catbot cybernetic cat avatar">
           <div><span class="role">THE CYBER UNIT</span><h3>Catbot</h3><p>Precise, controlled and subtly robotic. Mechanical styling, luminous eyes and a distinct synthetic voice character.</p></div>
         </article>
       </div>
@@ -83,6 +85,123 @@
         <article class="feature-card reveal"><span class="feature-no">08</span><div class="icon">$</div><h3>Cost visibility</h3><p>Daily API usage ledger showing where credits go, separated by model, endpoint and task.</p></article>
       </div>
     </section>
+
+    <section class="deep-dives" id="deep-dives">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Deep dives</p>
+        <h2>What HAL actually<br>does behind the interface.</h2>
+        <p>The visible conversation is only the front door. Each request moves through a dedicated path with its own controls, state and verification.</p>
+      </div>
+
+      <article class="deep-card reveal">
+        <img src="assets/voice-engine.webp" width="1600" height="900" alt="Concept illustration of HAL's voice waveform, visemes and facial states">
+        <div class="deep-copy">
+          <span class="deep-tag">VOICE · AVATAR · EXPRESSION</span>
+          <h3>Speech becomes a performance.</h3>
+          <p>HAL does more than play an audio file. Spoken text is cleaned for pronunciation, synthesized with the active character's voice direction and paired with a timed viseme track. The avatar follows that track while separate expression logic adds attention, thought and humor.</p>
+          <ol class="process-list">
+            <li><b>Listen</b><span>Push-to-talk or typed input enters the same conversation.</span></li>
+            <li><b>Speak</b><span>German or English TTS uses the selected HAL, Milo or Catbot profile.</span></li>
+            <li><b>Animate</b><span>Phonemes map to visible mouth groups with pause-aware timing and soft transitions.</span></li>
+            <li><b>Perform</b><span>Blinks, smiles, thinking faces and idle behavior prevent a static portrait.</span></li>
+          </ol>
+          <div class="detail-pills"><span>12+ viseme groups</span><span>avatar voices</span><span>idle animation</span><span>movable card</span></div>
+        </div>
+      </article>
+
+      <article class="deep-card reverse reveal">
+        <img src="assets/creative-studio.webp" width="1600" height="900" alt="Concept illustration of three prompt variants moving through a creative render pipeline">
+        <div class="deep-copy">
+          <span class="deep-tag">PROMPTS · COMFYUI · PHOTOSHOP</span>
+          <h3>From rough idea to chosen result.</h3>
+          <p>A request can become one direct render or a controlled selection process. HAL generates three distinct prompt options, waits for Guido to choose, then opens the model-specific setup instead of guessing the production settings.</p>
+          <ol class="process-list">
+            <li><b>Describe</b><span>Natural German input becomes a production-ready English prompt.</span></li>
+            <li><b>Choose</b><span>Render option 1, 2, 3, a subset or all three variants.</span></li>
+            <li><b>Configure</b><span>Workflow, model, LoRA, strength, size, aspect ratio and seed.</span></li>
+            <li><b>Continue</b><span>Repeat, revise or open chosen results directly in Photoshop.</span></li>
+          </ol>
+          <div class="detail-pills"><span>Flux</span><span>SDXL</span><span>LoRA</span><span>Juggernaut</span><span>Pic-to-pic</span><span>history</span></div>
+        </div>
+      </article>
+
+      <article class="deep-card reveal">
+        <img src="assets/memory-desktop.webp" width="1600" height="900" alt="Concept illustration of dossiers, contextual memory and a desktop application handoff">
+        <div class="deep-copy">
+          <span class="deep-tag">CONTEXT · DOSSIERS · DESKTOP</span>
+          <h3>Memory that appears when it matters.</h3>
+          <p>Recent conversation keeps the current exchange coherent. Structured dossiers hold durable knowledge about people, projects, vehicles, places or devices. Trigger terms retrieve a concise summary first and deeper sections only when the topic needs them.</p>
+          <ol class="process-list">
+            <li><b>Match</b><span>Names and related terms connect the message to the right dossier.</span></li>
+            <li><b>Retrieve</b><span>Only relevant facts and open topics enter the active context.</span></li>
+            <li><b>Respond</b><span>HAL asks useful follow-ups grounded in what is already known.</span></li>
+            <li><b>Act</b><span>Approved actions launch programs or prepare a Photoshop document.</span></li>
+          </ol>
+          <div class="quote-example"><small>CONTEXTUAL REACTION</small>“Klaus is here.” → “Has he already sold one of the cars?”</div>
+        </div>
+      </article>
+
+      <article class="deep-card reverse reveal">
+        <img src="assets/trading-cockpit.webp" width="1600" height="900" alt="Concept illustration of HAL's gold and crude oil DEMO trading cockpit">
+        <div class="deep-copy">
+          <span class="deep-tag gold">CAPITAL.COM DEMO · GOLD · OIL</span>
+          <h3>Automation with visible guardrails.</h3>
+          <p>The trading module observes commodities, evaluates entries and places DEMO orders through separately configured credentials. The broker account remains the source of truth: HAL reconciles positions before allowing new entries and records the broker's final booking value after closure.</p>
+          <ol class="process-list">
+            <li><b>Observe</b><span>Scan selected markets for confirmed pullbacks and local zones.</span></li>
+            <li><b>Validate</b><span>Check spread, direction, potential, stop risk, slots and daily limits.</span></li>
+            <li><b>Protect</b><span>Attach stop, target and holding time; reserve each entry atomically.</span></li>
+            <li><b>Reconcile</b><span>Compare local state with the broker and import the final result.</span></li>
+          </ol>
+          <div class="guardrail-grid"><span>position limits</span><span>loss limits</span><span>emergency close</span><span>audit trail</span><span>reconciliation</span><span>DEMO only</span></div>
+        </div>
+      </article>
+
+      <div class="capability-detail-grid">
+        <article class="mini-detail reveal"><span>VIDEO</span><h3>Krea provider</h3><p>Select model, duration, format, start image and optional end frame. HAL shows expected cost before submission, tracks the job and returns preview plus download.</p></article>
+        <article class="mini-detail reveal"><span>VISION</span><h3>Images and files</h3><p>Analyze screenshots, photos, code and text. Multiple uploads are summarized individually and then combined into one answer tied to the question.</p></article>
+        <article class="mini-detail reveal"><span>DESKTOP</span><h3>Programs and Photoshop</h3><p>A managed program list prevents random execution. Photoshop can open A4, Full HD or 4K documents and receive selected render results.</p></article>
+        <article class="mini-detail reveal"><span>COSTS</span><h3>Credit ledger</h3><p>API consumption is stored by date, model, endpoint and purpose, keeping costs understandable instead of hiding them in one total.</p></article>
+      </div>
+    </section>
+
+    <section class="captures" id="captures">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Real interface</p>
+        <h2>Not a mockup.<br>This is HAL at work.</h2>
+        <p>These captures come from the running system. Together they show how conversation, creative production, desktop actions, memory and the guarded DEMO trading workflow meet in one cockpit.</p>
+      </div>
+
+      <div class="capture-filters reveal" aria-label="Filter interface captures">
+        <button class="capture-filter active" type="button" data-filter="all">All systems</button>
+        <button class="capture-filter" type="button" data-filter="core">Core &amp; control</button>
+        <button class="capture-filter" type="button" data-filter="creative">Creative</button>
+        <button class="capture-filter" type="button" data-filter="trading">DEMO trading</button>
+      </div>
+
+      <div class="capture-grid">
+        <button class="capture-card wide reveal" type="button" data-category="core" data-full="assets/screens/01-command-center.webp"><img src="assets/screens/01-command-center.webp" width="1600" height="1000" loading="lazy" alt="HAL command center with conversation, Milo avatar, live preview and system status"><span><b>Command center</b><small>The central workspace keeps conversation, avatar, active workflow, result preview and system state visible at the same time.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/08-flux-workflow.webp"><img src="assets/screens/08-flux-workflow.webp" width="1600" height="1000" loading="lazy" alt="HAL Flux workflow configuration dialog"><span><b>Model-aware setup</b><small>Flux exposes prompt, size, aspect ratio, seed and detected model information in one focused dialog.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/11-prompt-variants.webp"><img src="assets/screens/11-prompt-variants.webp" width="1600" height="1000" loading="lazy" alt="Three distinct prompt variants generated by HAL"><span><b>Three directions first</b><small>One rough idea becomes three usable concepts. Guido can configure one option or send all three forward.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="creative" data-full="assets/screens/13-render-results.webp"><img src="assets/screens/13-render-results.webp" width="1600" height="1000" loading="lazy" alt="Three finished flying-car renders displayed in the HAL interface"><span><b>Results that stay comparable</b><small>Every result keeps its prompt, model, seed, job and timestamp. One, two or three renders use the same card language.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/12-post-render-routing.webp"><img src="assets/screens/12-post-render-routing.webp" width="1600" height="1000" loading="lazy" alt="Post-render dialog for rerendering or opening images in Photoshop"><span><b>Continue without file juggling</b><small>Select all, a subset or one result, then rerender it or pass it directly into the Photoshop path.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/09-krea-video.webp"><img src="assets/screens/09-krea-video.webp" width="1600" height="1000" loading="lazy" alt="Krea video configuration with model, duration, images and cost estimate"><span><b>Video with cost preview</b><small>Text-to-video and image-to-video share model, duration, quality, frame upload and estimated price controls.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="core" data-full="assets/screens/10-cost-ledger.webp"><img src="assets/screens/10-cost-ledger.webp" width="1600" height="1000" loading="lazy" alt="HAL daily OpenAI credit and cost ledger"><span><b>Credits stay explainable</b><small>Daily totals expand into task, model, request count and attributed cost instead of ending as one unexplained number.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="core" data-full="assets/screens/14-voice-programs.webp"><img src="assets/screens/14-voice-programs.webp" width="1600" height="1000" loading="lazy" alt="Allowlisted voice program launcher and Photoshop document controls"><span><b>Voice actions with boundaries</b><small>Only configured programs can start. Photoshop presets prepare A4, Full HD or 4K documents through the same bridge.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="core" data-full="assets/screens/15-knowledge-admin.webp"><img src="assets/screens/15-knowledge-admin.webp" width="1600" height="1000" loading="lazy" alt="HAL knowledge admin with memory, dossier and activity counters"><span><b>Memory remains maintainable</b><small>The admin workspace makes memories, dossiers, chats, renders and observations searchable, editable and measurable. Personal records are redacted here.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="trading" data-full="assets/screens/02-trade-run-setup.webp"><img src="assets/screens/02-trade-run-setup.webp" width="1600" height="1000" loading="lazy" alt="HAL general DEMO trade run settings"><span><b>Every run starts with limits</b><small>Analysis period, concurrency, position margin, loss limit, target and maximum holding time form a reusable preset.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="trading" data-full="assets/screens/03-trade-safety-check.webp"><img src="assets/screens/03-trade-safety-check.webp" width="1600" height="1000" loading="lazy" alt="HAL DEMO trading entry safety check waiting for a tradeable market"><span><b>Waiting is a valid decision</b><small>The run shows why no entry is allowed, how many slots are occupied and what the next action will be.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="trading" data-full="assets/screens/04-commodities-setup.webp"><img src="assets/screens/04-commodities-setup.webp" width="1600" height="1000" loading="lazy" alt="Gold and Oil DEMO strategy setup"><span><b>Commodity-specific strategy</b><small>Gold, Crude Oil and Brent can use their own pullback logic, minimum gain, stop and broker-margin settings.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="trading" data-full="assets/screens/05-commodities-guard.webp"><img src="assets/screens/05-commodities-guard.webp" width="1600" height="1000" loading="lazy" alt="HAL Gold and Oil final entry validation"><span><b>Final check before every order</b><small>Market availability, free slots and broker-derived sizing are checked again immediately before an entry.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="trading" data-full="assets/screens/06-broker-reconciliation.webp"><img src="assets/screens/06-broker-reconciliation.webp" width="1600" height="1000" loading="lazy" alt="HAL DEMO emergency controls and broker reconciliation status"><span><b>The broker remains authoritative</b><small>Emergency close, complete flattening, entry lock and a fresh broker check keep local assumptions aligned with the account.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="trading" data-full="assets/screens/07-trade-history.webp"><img src="assets/screens/07-trade-history.webp" width="1600" height="1000" loading="lazy" alt="Broker bookings and HAL DEMO trade history shown together"><span><b>Decision and outcome together</b><small>Final broker bookings sit above HAL's order history, including direction, size, result, status, exit reason and entry rationale.</small></span></button>
+      </div>
+    </section>
+
+    <dialog class="capture-lightbox" aria-label="Expanded interface capture">
+      <button class="lightbox-close" type="button" aria-label="Close expanded image">×</button>
+      <img src="" alt="">
+    </dialog>
 
     <section class="flow" id="flow">
       <div class="section-heading reveal">

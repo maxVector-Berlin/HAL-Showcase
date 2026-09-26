@@ -30,6 +30,100 @@ Each avatar pack brings its own facial states, German visemes, idle behavior and
 - **Transparent API costs** — daily usage ledger by task, endpoint and model.
 - **Capital.com DEMO cockpit** — broker reconciliation, spread guards, reservations, risk limits, stops, targets, timed exits and trade statistics.
 
+## Voice becomes character performance
+
+<img src="assets/voice-engine.webp" alt="HAL voice, viseme and expression engine concept" width="100%">
+
+HAL's spoken answer is paired with a visual performance:
+
+1. Input arrives through push-to-talk or text.
+2. Pronunciation cleanup keeps names such as **HAL** and **Milo** consistent.
+3. The active avatar chooses its own German or English voice direction.
+4. A timing sidecar maps speech into visible mouth groups and real pauses.
+5. Facial logic adds blinking, thought, amusement and subtle idle behavior.
+
+The avatar window can be resized, moved, snapped to screen edges and kept on top. HAL, Milo and Catbot use the same engine with different image and voice packs.
+
+## Creative pipeline with a real decision point
+
+<img src="assets/creative-studio.webp" alt="HAL prompt choice and creative render pipeline concept" width="100%">
+
+HAL supports direct rendering and a controlled three-prompt workflow:
+
+```text
+natural idea
+  → three distinct prompt cards
+  → choose 1, 2, 3, a subset or all
+  → choose workflow, model, LoRA, strength, size, ratio and seed
+  → render status and result cards
+  → repeat, revise or open selected images in Photoshop
+```
+
+The workflow UI adapts to the selected model. Pic-to-pic adds an upload preview; Krea video adds duration, model, format, start image and optional end frame. Expected Krea cost is shown before submission.
+
+## Context, dossiers and desktop actions
+
+<img src="assets/memory-desktop.webp" alt="HAL contextual memory and desktop action concept" width="100%">
+
+HAL combines two kinds of memory:
+
+- **Recent conversation context** keeps the current exchange coherent.
+- **Structured dossiers** store durable knowledge about people, projects, places, vehicles, devices and open topics.
+
+Matching terms retrieve a compact summary first. Deeper sections are loaded only when needed, avoiding unnecessary context. That allows reactions such as:
+
+> “Klaus is here.”<br>
+> “Has he already sold one of the cars?”
+
+Approved desktop actions use a managed program list. HAL can launch configured applications, ask which Photoshop format is required, create A4/Full HD/4K documents and hand selected render results to Photoshop.
+
+## Commodities DEMO cockpit
+
+<img src="assets/trading-cockpit.webp" alt="HAL gold and crude oil DEMO trading cockpit concept" width="100%">
+
+The commodities runner focuses on Gold and Crude Oil in Capital.com **DEMO** mode:
+
+1. Scan configured markets for confirmed pullbacks and local zones.
+2. Check spread, direction, reward potential, stop risk and free trade slots.
+3. Reserve an entry before order submission to prevent duplicate placements.
+4. Attach stop, target and maximum holding time.
+5. Reconcile local state against broker positions before further entries.
+6. Import the broker's final booking value when the trade closes.
+
+Configurable guardrails include position value, concurrent trades, per-trade loss, session target, daily loss, order-attempt limit and emergency close. Results and exit reasons remain visible in the trade ledger.
+
+## Supporting systems
+
+| System | What it adds |
+|---|---|
+| **Krea video** | Model selection, image-to-video, optional end frame, cost estimate, job tracking, preview and download |
+| **Vision and files** | Screenshot, photo, code and text analysis; combined reasoning across multiple uploads |
+| **Photoshop bridge** | Document creation plus opening selected completed renders |
+| **Desktop launcher** | Voice-driven starts from an explicit managed application list |
+| **API cost ledger** | Daily spend grouped by model, endpoint and purpose |
+| **Render history** | Reopen, edit and rerender old prompts or pass their result to Photoshop |
+
+## Real interface captures
+
+The showcase includes a guided tour of the running interface rather than relying only on concept art. All 15 captures are presented in a consistent frame and can be opened full-size on the website.
+
+| Command center | Creative results |
+|:---:|:---:|
+| <img src="assets/screens/01-command-center.webp" alt="HAL command center" width="100%"> | <img src="assets/screens/13-render-results.webp" alt="HAL three-result render view" width="100%"> |
+
+| Knowledge admin | Broker reconciliation |
+|:---:|:---:|
+| <img src="assets/screens/15-knowledge-admin.webp" alt="HAL knowledge admin" width="100%"> | <img src="assets/screens/06-broker-reconciliation.webp" alt="HAL broker reconciliation" width="100%"> |
+
+The complete tour covers:
+
+- the central conversation, avatar, preview and status cockpit;
+- model-aware Flux setup, three-prompt choice, result comparison and post-render routing;
+- Krea video controls and the day-by-day API cost ledger;
+- allowlisted voice program launching and Photoshop document presets;
+- searchable memory, dossiers, chats, renders and observations;
+- general and commodity-specific DEMO trade presets, pre-entry checks, emergency controls, broker reconciliation and the traceable trade ledger.
+
 ## Request flow
 
 ```text
