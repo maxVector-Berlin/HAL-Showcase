@@ -22,8 +22,8 @@ Each avatar pack brings its own facial states, German visemes, idle behavior and
 ## What HAL connects
 
 - **Voice and character performance** — speech recognition, multilingual TTS, avatar-specific voices, timed visemes, blinking and contextual facial expressions.
-- **Creative AI cockpit** — ComfyUI workflows, model and LoRA selection, seeds, formats, pic-to-pic, three-prompt selection and render history.
-- **Video workflows** — Krea model selection, image-to-video, cost preview, progress, playback and download.
+- **Creative production cockpit** — ComfyUI workflows, PictoFlux2, the 18-state Avatar Factory, model and LoRA selection, seeds, formats, pic-to-pic and render history.
+- **Video and animation** — MiniMax H3 text-to-video, image-to-video and first/last-frame animation with native stereo audio, presets and visible model controls.
 - **Context and dossiers** — recent conversation plus structured knowledge about people, projects, places and ongoing topics.
 - **Desktop and Photoshop bridge** — launch configured applications, prepare Photoshop documents and open selected render results.
 - **Vision and files** — analyze screenshots, images, text, code and multiple uploaded files together.
@@ -59,7 +59,57 @@ natural idea
   → repeat, revise or open selected images in Photoshop
 ```
 
-The workflow UI adapts to the selected model. Pic-to-pic adds an upload preview; Krea video adds duration, model, format, start image and optional end frame. Expected Krea cost is shown before submission.
+The workflow UI adapts to the selected model. Pic-to-pic adds an upload preview; PictoFlux2 adds character-preserving edit strength and reproducible seed control; MiniMax H3 adds duration, format, first and optional last frame, Turbo settings and native audio direction.
+
+## Production accelerators
+
+These tools were built for **our own software production**. Creating consistent character states, animation frames and controlled edits repeatedly by hand was slowing down the pipeline. HAL now turns those recurring steps into named, reproducible jobs without hiding the creative controls.
+
+### Avatar Factory — one source, 18 aligned states
+
+<img src="assets/screens/16-avatar-factory.webp" alt="HAL Avatar Factory producing an expression pack from one neutral character" width="100%">
+
+The Avatar Factory turns one validated square **1024 × 1024 neutral portrait** into a complete expression pack for our software avatars:
+
+1. Load the neutral character and name the project.
+2. Select any combination of 18 production states such as blinking, happy, listening, thinking, angry, sleeping, alarmed or bored.
+3. Open **ED** beside any state to inspect, change and save its actual generation instruction.
+4. Choose effect strength and a shared project seed to preserve visual continuity.
+5. Submit memory-safe Turbo jobs sequentially and collect every result in one named project folder.
+
+A fixed production guard tells the model to preserve character identity, exact position, image dimensions and lighting while changing only the requested expression. The resulting pack is ready for background removal, interpolation and integration into HAL, CyberBuddy or another character-driven application.
+
+### MiniMax H3 — directed animation and video
+
+<img src="assets/screens/19-minimax-h3-frames.webp" alt="MiniMax H3 first-to-last-frame animation controls in HAL" width="100%">
+
+The H3 studio supports **text-to-video, image-to-video and first-to-last-frame video** with native stereo audio. Instead of putting an entire production brief into one opaque text area, HAL separates it into reusable blocks:
+
+```text
+visual look
+  + scene and action
+  + timed storyboard
+  + camera direction
+  + dialogue / sound effects / music
+  + exclusions
+  → one clean model prompt
+```
+
+Preset buttons provide useful starting points while aspect ratio, megapixels, duration, random or fixed seed, Turbo strength and Turbo steps remain directly adjustable. German descriptions are translated only when useful; already suitable English prompt material is not rewritten unnecessarily.
+
+### PictoFlux2 — character-preserving image edits
+
+<img src="assets/screens/22-pictoflux2-render.webp" alt="PictoFlux2 character-preserving image edit in HAL" width="100%">
+
+PictoFlux2 is the fast editing path behind the character workflow. It accepts a source image plus a focused change request and provides:
+
+- an effect-strength slider for balancing identity retention against edit intensity;
+- format and aspect-ratio controls;
+- random or fixed seeds for comparable, repeatable iterations;
+- a memory-safe eight-step Turbo path for local production batches;
+- a full result preview that can feed avatar packs, animation frames or the wider render workflow.
+
+Together, the three tools form a practical loop: **PictoFlux2 develops and corrects the character, Avatar Factory produces its expression vocabulary, and MiniMax H3 brings selected frames to life.**
 
 ## Context, dossiers and desktop actions
 
@@ -96,7 +146,9 @@ Configurable guardrails include position value, concurrent trades, per-trade los
 
 | System | What it adds |
 |---|---|
-| **Krea video** | Model selection, image-to-video, optional end frame, cost estimate, job tracking, preview and download |
+| **Avatar Factory** | Batch production of 18 aligned facial states with editable prompts, shared seed and project folders |
+| **PictoFlux2** | Character-preserving image edits with effect strength, format, ratio, seed and Turbo controls |
+| **MiniMax H3** | Text-, image- and first/last-frame video with prompt blocks, presets, Turbo and native stereo audio |
 | **Vision and files** | Screenshot, photo, code and text analysis; combined reasoning across multiple uploads |
 | **Photoshop bridge** | Document creation plus opening selected completed renders |
 | **Desktop launcher** | Voice-driven starts from an explicit managed application list |
@@ -105,7 +157,7 @@ Configurable guardrails include position value, concurrent trades, per-trade los
 
 ## Real interface captures
 
-The showcase includes a guided tour of the running interface rather than relying only on concept art. All 15 captures are presented in a consistent frame and can be opened full-size on the website.
+The showcase includes a guided tour of the running interface rather than relying only on concept art. All 22 current captures are presented in a consistent frame and can be opened full-size on the website.
 
 | Command center | Creative results |
 |:---:|:---:|
@@ -119,7 +171,10 @@ The complete tour covers:
 
 - the central conversation, avatar, preview and status cockpit;
 - model-aware Flux setup, three-prompt choice, result comparison and post-render routing;
-- Krea video controls and the day-by-day API cost ledger;
+- Avatar Factory batch selection, per-state prompt editing and stable project controls;
+- MiniMax H3 first/last-frame animation, block-based prompt direction and visible Turbo controls;
+- PictoFlux2 character-preserving edits, strength, format and seed controls;
+- the day-by-day API cost ledger;
 - allowlisted voice program launching and Photoshop document presets;
 - searchable memory, dossiers, chats, renders and observations;
 - general and commodity-specific DEMO trade presets, pre-entry checks, emergency controls, broker reconciliation and the traceable trade ledger.

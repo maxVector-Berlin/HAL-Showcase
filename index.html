@@ -16,6 +16,7 @@
       <a href="#characters">Characters</a>
       <a href="#systems">Systems</a>
       <a href="#deep-dives">Deep dives</a>
+      <a href="#production">Production</a>
       <a href="#captures">Live UI</a>
       <a href="#flow">Architecture</a>
       <a class="nav-cta" href="https://github.com/maxVector-Berlin/HAL-Showcase">GitHub</a>
@@ -76,12 +77,12 @@
       </div>
       <div class="feature-grid">
         <article class="feature-card large reveal"><span class="feature-no">01</span><div class="icon">◉</div><h3>Voice & performance</h3><p>Speech recognition, multilingual TTS, avatar-specific voice direction, phoneme-driven visemes, facial states, blinking and contextual expressions.</p><ul><li>German and English</li><li>HAL, Milo and Catbot profiles</li><li>Realtime mouth and face animation</li></ul></article>
-        <article class="feature-card reveal"><span class="feature-no">02</span><div class="icon">⌘</div><h3>Creative studio</h3><p>Model-aware image workflows with prompt assistance, three-variant selection, seeds, ratios, LoRAs, pic-to-pic and render history.</p></article>
+        <article class="feature-card reveal"><span class="feature-no">02</span><div class="icon">⌘</div><h3>Creative production</h3><p>Model-aware rendering plus PictoFlux2 editing and an Avatar Factory that turns one neutral character into a consistent expression pack.</p></article>
         <article class="feature-card reveal"><span class="feature-no">03</span><div class="icon">◇</div><h3>Living memory</h3><p>Conversation context plus structured dossiers for people, projects, places and ongoing topics — loaded only when relevant.</p></article>
         <article class="feature-card reveal"><span class="feature-no">04</span><div class="icon">↗</div><h3>Desktop bridge</h3><p>Natural-language program launching, Photoshop document setup and post-render handoff into a real creative workflow.</p></article>
         <article class="feature-card large trading reveal"><span class="feature-no">05</span><div class="market-line" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>Broker-verified DEMO cockpit</h3><p>Gold and oil strategy runs with spread checks, reservations, stop/target logic, timed exits, reconciliation and transparent trade statistics.</p><div class="warning">Capital.com DEMO only · broker state remains the source of truth</div></article>
         <article class="feature-card reveal"><span class="feature-no">06</span><div class="icon">▧</div><h3>Vision & files</h3><p>Image understanding and combined analysis across screenshots, documents, code and multiple uploaded files.</p></article>
-        <article class="feature-card reveal"><span class="feature-no">07</span><div class="icon">▶</div><h3>Video & media</h3><p>Krea video workflows, image-to-video controls, cost previews, job tracking, preview and download.</p></article>
+        <article class="feature-card reveal"><span class="feature-no">07</span><div class="icon">▶</div><h3>Video & animation</h3><p>MiniMax H3 text-to-video, image-to-video and first/last-frame animation with native stereo audio, production presets and local job tracking.</p></article>
         <article class="feature-card reveal"><span class="feature-no">08</span><div class="icon">$</div><h3>Cost visibility</h3><p>Daily API usage ledger showing where credits go, separated by model, endpoint and task.</p></article>
       </div>
     </section>
@@ -121,7 +122,7 @@
             <li><b>Configure</b><span>Workflow, model, LoRA, strength, size, aspect ratio and seed.</span></li>
             <li><b>Continue</b><span>Repeat, revise or open chosen results directly in Photoshop.</span></li>
           </ol>
-          <div class="detail-pills"><span>Flux</span><span>SDXL</span><span>LoRA</span><span>Juggernaut</span><span>Pic-to-pic</span><span>history</span></div>
+          <div class="detail-pills"><span>Flux</span><span>PictoFlux2</span><span>Avatar Factory</span><span>LoRA</span><span>Pic-to-pic</span><span>history</span></div>
         </div>
       </article>
 
@@ -158,11 +159,79 @@
       </article>
 
       <div class="capability-detail-grid">
-        <article class="mini-detail reveal"><span>VIDEO</span><h3>Krea provider</h3><p>Select model, duration, format, start image and optional end frame. HAL shows expected cost before submission, tracks the job and returns preview plus download.</p></article>
+        <article class="mini-detail reveal"><span>VIDEO</span><h3>MiniMax H3 studio</h3><p>Build a scene from separate look, action, storyboard, camera, audio and exclusion blocks, then render text-to-video, pic-to-video or pic-to-pic video locally.</p></article>
         <article class="mini-detail reveal"><span>VISION</span><h3>Images and files</h3><p>Analyze screenshots, photos, code and text. Multiple uploads are summarized individually and then combined into one answer tied to the question.</p></article>
         <article class="mini-detail reveal"><span>DESKTOP</span><h3>Programs and Photoshop</h3><p>A managed program list prevents random execution. Photoshop can open A4, Full HD or 4K documents and receive selected render results.</p></article>
         <article class="mini-detail reveal"><span>COSTS</span><h3>Credit ledger</h3><p>API consumption is stored by date, model, endpoint and purpose, keeping costs understandable instead of hiding them in one total.</p></article>
       </div>
+    </section>
+
+    <section class="production-tools" id="production">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Production accelerators</p>
+        <h2>Built for our own pipeline.<br><em>Now part of HAL.</em></h2>
+        <p>These tools were created for a practical reason: producing consistent avatars, animation and character edits for our software solutions was taking too many repetitive manual steps. HAL now turns those steps into controlled, reusable production jobs.</p>
+      </div>
+
+      <article class="production-card reveal">
+        <div class="production-media">
+          <img src="assets/screens/16-avatar-factory.webp" width="1159" height="894" loading="lazy" alt="HAL Avatar Factory with a neutral source image and 18 selectable facial states">
+          <img class="production-secondary" src="assets/screens/17-avatar-prompt-editor.webp" width="1086" height="618" loading="lazy" alt="Avatar Factory editor for a single expression prompt">
+        </div>
+        <div class="production-copy">
+          <span class="deep-tag">AVATAR FACTORY · 18 STATES</span>
+          <h3>One neutral character becomes a production-ready expression pack.</h3>
+          <p class="production-purpose">Built for our avatar production: instead of preparing every facial state by hand, one aligned 1024 × 1024 neutral image can generate the complete visual vocabulary required by our assistants.</p>
+          <ol class="process-list">
+            <li><b>Input</b><span>Load a square neutral portrait and give the production project a name.</span></li>
+            <li><b>Direct</b><span>Select any of 18 states. Every state has its own editable and reusable prompt.</span></li>
+            <li><b>Control</b><span>Effect strength, shared project seed and Turbo settings keep the character consistent.</span></li>
+            <li><b>Deliver</b><span>Jobs render sequentially into one project folder, ready for cutout, interpolation and integration.</span></li>
+          </ol>
+          <p class="production-note">A permanent guard instructs the model to preserve position, dimensions, character identity and lighting while changing only the requested expression. Per-state prompt edits can be saved directly from the <b>ED</b> dialog.</p>
+          <div class="detail-pills"><span>1024 source validation</span><span>editable presets</span><span>fixed seed</span><span>sequential queue</span><span>project folders</span></div>
+        </div>
+      </article>
+
+      <article class="production-card reverse reveal">
+        <div class="production-media">
+          <img src="assets/screens/19-minimax-h3-frames.webp" width="1312" height="779" loading="lazy" alt="MiniMax H3 workflow with first and last frame inputs and production presets">
+          <img class="production-secondary" src="assets/screens/20-minimax-h3-prompt-builder.webp" width="1296" height="701" loading="lazy" alt="MiniMax H3 block-based prompt builder for scene, storyboard, camera and audio">
+        </div>
+        <div class="production-copy">
+          <span class="deep-tag">ANIMATION · VIDEO · NATIVE STEREO AUDIO</span>
+          <h3>A shot plan becomes a controllable video job.</h3>
+          <p class="production-purpose">The animation path supports text-to-video, image-to-video and first-to-last-frame animation. It was built to turn our still assets into directed sequences without hiding the important model parameters.</p>
+          <ol class="process-list">
+            <li><b>Frame</b><span>Start from text, one image or a defined first and last image for pic-to-pic video.</span></li>
+            <li><b>Build</b><span>Compose look, scene, storyboard, camera, audio and exclusions as separate prompt blocks.</span></li>
+            <li><b>Tune</b><span>Set ratio, megapixels, duration, Turbo strength, Turbo steps and random or fixed seed.</span></li>
+            <li><b>Render</b><span>Use production presets, native stereo audio and local job tracking through completion.</span></li>
+          </ol>
+          <p class="production-note">German ideas can be normalized into a clean English production prompt only when translation is useful; already suitable English material remains untouched.</p>
+          <div class="detail-pills"><span>T2V</span><span>I2V</span><span>first + last frame</span><span>prompt blocks</span><span>presets</span><span>Turbo</span></div>
+        </div>
+      </article>
+
+      <article class="production-card reveal">
+        <div class="production-media">
+          <img src="assets/screens/22-pictoflux2-render.webp" width="1108" height="879" loading="lazy" alt="PictoFlux2 character-preserving image edit inside HAL">
+          <img class="production-secondary" src="assets/screens/23-pictoflux2-controls.webp" width="1081" height="694" loading="lazy" alt="PictoFlux2 strength, format, seed and output controls">
+        </div>
+        <div class="production-copy">
+          <span class="deep-tag">PICTOFLUX2 · CHARACTER-PRESERVING EDITS</span>
+          <h3>Change the expression without losing the character.</h3>
+          <p class="production-purpose">PictoFlux2 is the image-editing engine behind the fast character workflow. It lets our production team alter expression and controlled details while preserving framing, visual identity and the source design.</p>
+          <ol class="process-list">
+            <li><b>Load</b><span>Choose the source image and describe only the intended visual change.</span></li>
+            <li><b>Balance</b><span>Use the effect-strength slider to choose between strict preservation and a stronger edit.</span></li>
+            <li><b>Repeat</b><span>Format, aspect ratio and random or fixed seed make tests comparable and reproducible.</span></li>
+            <li><b>Feed</b><span>Finished images flow into avatar packs, animation frames or the wider HAL render pipeline.</span></li>
+          </ol>
+          <p class="production-note">A memory-safe eight-step Turbo path keeps local iteration quick enough for production batches while retaining a full-resolution result preview.</p>
+          <div class="detail-pills"><span>effect strength</span><span>identity retention</span><span>format control</span><span>seed control</span><span>8-step Turbo</span></div>
+        </div>
+      </article>
     </section>
 
     <section class="captures" id="captures">
@@ -176,16 +245,24 @@
         <button class="capture-filter active" type="button" data-filter="all">All systems</button>
         <button class="capture-filter" type="button" data-filter="core">Core &amp; control</button>
         <button class="capture-filter" type="button" data-filter="creative">Creative</button>
+        <button class="capture-filter" type="button" data-filter="production">Production</button>
         <button class="capture-filter" type="button" data-filter="trading">DEMO trading</button>
       </div>
 
       <div class="capture-grid">
         <button class="capture-card wide reveal" type="button" data-category="core" data-full="assets/screens/01-command-center.webp"><img src="assets/screens/01-command-center.webp" width="1600" height="1000" loading="lazy" alt="HAL command center with conversation, Milo avatar, live preview and system status"><span><b>Command center</b><small>The central workspace keeps conversation, avatar, active workflow, result preview and system state visible at the same time.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="production" data-full="assets/screens/16-avatar-factory.webp"><img src="assets/screens/16-avatar-factory.webp" width="1159" height="894" loading="lazy" alt="Avatar Factory with project input, neutral image and expression-state selection"><span><b>Avatar Factory</b><small>One neutral 1024 image becomes a controlled batch of up to 18 aligned facial states for our software avatars.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="production" data-full="assets/screens/17-avatar-prompt-editor.webp"><img src="assets/screens/17-avatar-prompt-editor.webp" width="1086" height="618" loading="lazy" alt="Per-state Avatar Factory prompt editor"><span><b>Every state remains editable</b><small>The ED dialog exposes the actual expression instruction while a fixed guard protects identity, framing and lighting.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="production" data-full="assets/screens/18-avatar-factory-controls.webp"><img src="assets/screens/18-avatar-factory-controls.webp" width="1232" height="894" loading="lazy" alt="Avatar Factory project and render controls"><span><b>Stable batch controls</b><small>Effect strength, a shared project seed and sequential Turbo rendering make complete packs reproducible.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="production" data-full="assets/screens/19-minimax-h3-frames.webp"><img src="assets/screens/19-minimax-h3-frames.webp" width="1312" height="779" loading="lazy" alt="MiniMax H3 first and last frame video workflow"><span><b>First frame to last frame</b><small>MiniMax H3 can animate between two defined images or start from text or a single source frame.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="production" data-full="assets/screens/20-minimax-h3-prompt-builder.webp"><img src="assets/screens/20-minimax-h3-prompt-builder.webp" width="1296" height="701" loading="lazy" alt="Block-based MiniMax H3 prompt builder"><span><b>Prompts become shot plans</b><small>Look, scene, storyboard, camera, audio and exclusions remain separate, editable production blocks.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="production" data-full="assets/screens/21-minimax-h3-controls.webp"><img src="assets/screens/21-minimax-h3-controls.webp" width="1264" height="422" loading="lazy" alt="MiniMax H3 duration, seed and Turbo controls"><span><b>The model controls stay visible</b><small>Duration, random or fixed seed, Turbo strength and step count can be tuned instead of buried.</small></span></button>
+        <button class="capture-card wide reveal" type="button" data-category="production" data-full="assets/screens/22-pictoflux2-render.webp"><img src="assets/screens/22-pictoflux2-render.webp" width="1108" height="879" loading="lazy" alt="PictoFlux2 render interface with character-preserving edit"><span><b>PictoFlux2 inside HAL</b><small>Source image, focused instruction and result stay together for fast, character-faithful production edits.</small></span></button>
+        <button class="capture-card reveal" type="button" data-category="production" data-full="assets/screens/23-pictoflux2-controls.webp"><img src="assets/screens/23-pictoflux2-controls.webp" width="1081" height="694" loading="lazy" alt="PictoFlux2 effect-strength, ratio and seed controls"><span><b>Strength without guesswork</b><small>The effect slider, format, aspect ratio and seed controls make iterative edits comparable.</small></span></button>
         <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/08-flux-workflow.webp"><img src="assets/screens/08-flux-workflow.webp" width="1600" height="1000" loading="lazy" alt="HAL Flux workflow configuration dialog"><span><b>Model-aware setup</b><small>Flux exposes prompt, size, aspect ratio, seed and detected model information in one focused dialog.</small></span></button>
         <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/11-prompt-variants.webp"><img src="assets/screens/11-prompt-variants.webp" width="1600" height="1000" loading="lazy" alt="Three distinct prompt variants generated by HAL"><span><b>Three directions first</b><small>One rough idea becomes three usable concepts. Guido can configure one option or send all three forward.</small></span></button>
         <button class="capture-card wide reveal" type="button" data-category="creative" data-full="assets/screens/13-render-results.webp"><img src="assets/screens/13-render-results.webp" width="1600" height="1000" loading="lazy" alt="Three finished flying-car renders displayed in the HAL interface"><span><b>Results that stay comparable</b><small>Every result keeps its prompt, model, seed, job and timestamp. One, two or three renders use the same card language.</small></span></button>
         <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/12-post-render-routing.webp"><img src="assets/screens/12-post-render-routing.webp" width="1600" height="1000" loading="lazy" alt="Post-render dialog for rerendering or opening images in Photoshop"><span><b>Continue without file juggling</b><small>Select all, a subset or one result, then rerender it or pass it directly into the Photoshop path.</small></span></button>
-        <button class="capture-card reveal" type="button" data-category="creative" data-full="assets/screens/09-krea-video.webp"><img src="assets/screens/09-krea-video.webp" width="1600" height="1000" loading="lazy" alt="Krea video configuration with model, duration, images and cost estimate"><span><b>Video with cost preview</b><small>Text-to-video and image-to-video share model, duration, quality, frame upload and estimated price controls.</small></span></button>
         <button class="capture-card reveal" type="button" data-category="core" data-full="assets/screens/10-cost-ledger.webp"><img src="assets/screens/10-cost-ledger.webp" width="1600" height="1000" loading="lazy" alt="HAL daily OpenAI credit and cost ledger"><span><b>Credits stay explainable</b><small>Daily totals expand into task, model, request count and attributed cost instead of ending as one unexplained number.</small></span></button>
         <button class="capture-card reveal" type="button" data-category="core" data-full="assets/screens/14-voice-programs.webp"><img src="assets/screens/14-voice-programs.webp" width="1600" height="1000" loading="lazy" alt="Allowlisted voice program launcher and Photoshop document controls"><span><b>Voice actions with boundaries</b><small>Only configured programs can start. Photoshop presets prepare A4, Full HD or 4K documents through the same bridge.</small></span></button>
         <button class="capture-card wide reveal" type="button" data-category="core" data-full="assets/screens/15-knowledge-admin.webp"><img src="assets/screens/15-knowledge-admin.webp" width="1600" height="1000" loading="lazy" alt="HAL knowledge admin with memory, dossier and activity counters"><span><b>Memory remains maintainable</b><small>The admin workspace makes memories, dossiers, chats, renders and observations searchable, editable and measurable. Personal records are redacted here.</small></span></button>
